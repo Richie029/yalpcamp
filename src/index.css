@@ -1,0 +1,49 @@
+:root {
+  --heading-font: "Inter", sans-serif;
+  --text-font: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--text-font);
+}
+
+body {
+  background: whitesmoke;
+}
+
+.heading-font {
+  font-family: var(--heading-font);
+}
+
+.text-font {
+  font-family: var(--text-font);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loadingScreen {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  animation: load 2s ease infinite;
+}
+@keyframes load {
+  0% {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
